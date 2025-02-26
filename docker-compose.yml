@@ -18,7 +18,7 @@ services:
     command: ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
 
   db:
-    image: postgres:latest
+    image: postgres:16
     container_name: financ_statistic_db
     env_file:
       - .env
